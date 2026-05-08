@@ -2,7 +2,7 @@ package eci.edu.byteProgramming.ejercicio.paper.util;
 
 import java.util.Date;
 
-public abstract class PaymentMethod implements ValidatePayment{
+public abstract class PaymentMethod {
     protected double amount;
     protected String transactionID;
     protected String customerID;

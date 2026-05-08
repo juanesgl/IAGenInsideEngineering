@@ -28,8 +28,15 @@ public class ECIPayment {
         System.out.println("----------------------------------------");
         
         PaymentMethod payment = factory.createPaymentMethod(amount, customerId, description);
+        ValidatePayment validator = factory.createValidator();
         
-        boolean success = payment.processPayment();
+        boolean success = false;
+        if (validator.validatePaymentMethod()) {
+            success = payment.processPayment();
+        } else {
+            System.out.println("Payment validation failed!");
+            payment.setStatus(PaymentStatus.FAILED);
+        }
  
         if (success) {
             System.out.println("Payment processed successfully!");

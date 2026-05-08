@@ -1,0 +1,57 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< eci.edu.byteProgramming:ejercicio-paper >---------------
+[INFO] Building ByteProgramming - Ejercicio Paper 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ ejercicio-paper ---
+[INFO] Deleting /home/juan/Escritorio/Git-Repos/DOSW/DOSW-IA/IAGenInsideEngineering/target
+[INFO] 
+[INFO] --- jacoco:0.8.12:prepare-agent (default) @ ejercicio-paper ---
+[INFO] argLine set to -javaagent:/home/juan/.m2/repository/org/jacoco/org.jacoco.agent/0.8.12/org.jacoco.agent-0.8.12-runtime.jar=destfile=/home/juan/Escritorio/Git-Repos/DOSW/DOSW-IA/IAGenInsideEngineering/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ ejercicio-paper ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ ejercicio-paper ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 14 source files with javac [debug parameters release 17] to target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/juan/Escritorio/Git-Repos/DOSW/DOSW-IA/IAGenInsideEngineering/src/main/java/eci/edu/byteProgramming/ejercicio/paper/util/ECIPayment.java:[21,35] cannot find symbol
+  symbol:   class PaymentFactory
+  location: class eci.edu.byteProgramming.ejercicio.paper.util.ECIPayment
+[ERROR] /home/juan/Escritorio/Git-Repos/DOSW/DOSW-IA/IAGenInsideEngineering/src/main/java/eci/edu/byteProgramming/ejercicio/paper/util/PaymentEventObserver.java:[28,21] cannot find symbol
+  symbol:   method sendConfirmationEmail(java.lang.String,java.lang.String,eci.edu.byteProgramming.ejercicio.paper.util.PaymentMethod)
+  location: variable notification of type javax.management.Notification
+[ERROR] /home/juan/Escritorio/Git-Repos/DOSW/DOSW-IA/IAGenInsideEngineering/src/main/java/eci/edu/byteProgramming/ejercicio/paper/util/PaymentEventObserver.java:[36,21] cannot find symbol
+  symbol:   method sendFailureNotification(eci.edu.byteProgramming.ejercicio.paper.util.PaymentMethod,java.lang.String)
+  location: variable notification of type javax.management.Notification
+[INFO] 3 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.116 s
+[INFO] Finished at: 2026-05-08T10:56:56-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.14.1:compile (default-compile) on project ejercicio-paper: Compilation failure: Compilation failure: 
+[ERROR] /home/juan/Escritorio/Git-Repos/DOSW/DOSW-IA/IAGenInsideEngineering/src/main/java/eci/edu/byteProgramming/ejercicio/paper/util/ECIPayment.java:[21,35] cannot find symbol
+[ERROR]   symbol:   class PaymentFactory
+[ERROR]   location: class eci.edu.byteProgramming.ejercicio.paper.util.ECIPayment
+[ERROR] /home/juan/Escritorio/Git-Repos/DOSW/DOSW-IA/IAGenInsideEngineering/src/main/java/eci/edu/byteProgramming/ejercicio/paper/util/PaymentEventObserver.java:[28,21] cannot find symbol
+[ERROR]   symbol:   method sendConfirmationEmail(java.lang.String,java.lang.String,eci.edu.byteProgramming.ejercicio.paper.util.PaymentMethod)
+[ERROR]   location: variable notification of type javax.management.Notification
+[ERROR] /home/juan/Escritorio/Git-Repos/DOSW/DOSW-IA/IAGenInsideEngineering/src/main/java/eci/edu/byteProgramming/ejercicio/paper/util/PaymentEventObserver.java:[36,21] cannot find symbol
+[ERROR]   symbol:   method sendFailureNotification(eci.edu.byteProgramming.ejercicio.paper.util.PaymentMethod,java.lang.String)
+[ERROR]   location: variable notification of type javax.management.Notification
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
